@@ -1,2 +1,4 @@
-# personal-dashboard
+## Личный дашборд
 Практика. Личный дашборд для помощи с организацией
+## Use-case диаграмма
+![Use-case диаграмма](./screenshots/use-case.png)
