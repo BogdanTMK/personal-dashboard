@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд — Задачи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-link active">Задачи</a>
+            <a href="links.html" class="nav-link">Ссылки</a>
+            <a href="#" id="scheduleLink" target="_blank" class="nav-link schedule-link">Расписание</a>
+        </nav>
+        <h1 class="page-title">Мои задачи</h1>
+    </header>
+
+    <main class="container">
+        <section class="task-form">
+            <h2>Новая задача</h2>
+            <div class="form-group">
+                <input type="text" id="taskTitle" placeholder="Название задачи" class="input">
+                <input type="date" id="taskDeadline" class="input">
+                <button id="addTaskBtn" class="btn btn-primary">Добавить</button>
+            </div>
+        </section>
+
+        <section class="task-list">
+            <h2>Список задач</h2>
+            <ul id="tasksContainer" class="tasks"></ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Личный дашборд</p>
+    </footer>
+
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

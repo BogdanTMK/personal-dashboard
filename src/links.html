@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд — Ссылки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Задачи</a>
+            <a href="links.html" class="nav-link active">Ссылки</a>
+            <a href="#" id="scheduleLink" target="_blank" class="nav-link schedule-link">Расписание</a>
+        </nav>
+        <h1 class="page-title">Полезные ссылки</h1>
+    </header>
+
+    <main class="container">
+        <section class="link-form">
+            <h2>Добавить ссылку</h2>
+            <div class="form-group">
+                <input type="text" id="linkTitle" placeholder="Название" class="input">
+                <input type="url" id="linkUrl" placeholder="URL (https://...)" class="input">
+                
+                <div class="category-group">
+                    <select id="linkCategorySelect" class="input">
+                        <option value="">-- Выбрать категорию --</option>
+                    </select>
+                    <input type="text" id="linkCategoryNew" placeholder="Или введите новую категорию" class="input">
+                    <button type="button" id="addCategoryBtn" class="btn btn-secondary">Добавить категорию</button>
+                </div>
+                
+                <textarea id="linkNote" placeholder="Заметка (опционально)" rows="2" class="input"></textarea>
+                <button id="addLinkBtn" class="btn btn-primary">Добавить ссылку</button>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <label>Фильтр по категории:</label>
+            <select id="filterCategory" class="input">
+                <option value="all">Все категории</option>
+            </select>
+        </section>
+
+        <section class="link-list">
+            <h2>Мои ссылки</h2>
+            <div id="linksContainer" class="links"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Личный дашборд</p>
+    </footer>
+
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
