@@ -2,3 +2,6 @@
 Практика. Личный дашборд для помощи с организацией
 ## Use-case диаграмма
 ![Use-case диаграмма](./screenshots/use-case.png)
+## Прототип интерфейса
+![Скрин индекс](./screenshots/screenshotindex.png)
+![Скрин ссылки](./screenshots/screenshotlinks.png)
